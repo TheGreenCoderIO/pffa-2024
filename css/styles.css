@@ -164,3 +164,17 @@ img.small-logo {
 .footer ul li.active a {
     color: #000;
 }
+
+@media screen and (max-width: 990px) 
+{
+  .nav-link {
+    margin-left: 20px;
+    font-size:5vw;
+  }
+  img.small-logo {
+    max-width: 100%;
+  }
+  .leading-heading {
+    font-size: 27px;
+  }
+}
