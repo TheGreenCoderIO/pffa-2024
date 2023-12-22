@@ -1,5 +1,5 @@
 body {
-    background: url(../images/ruvim-noga-pazM9TQJ2Ck-unsplash.jpg) no-repeat center center fixed;
+    background-color: #34422f;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -8,43 +8,25 @@ body {
 
 /* change the background color */
 .navbar-custom {
-    /* background-color: rgb(45, 55, 54); */
-    background-color: rgb(0, 0, 0, 0.5);
-    text-align:justify;
-    font-size:2vw;
+    background-color: #a24695;
     font-family: "Jomolhari";
-    margin-bottom: 40px;
 }
 
-.navbar-custom ul {
-    width:100%;
-    justify-content: space-around;
+.nav-item {
+  font-size: 1rem;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: #fff;
 }
 
 .navbar-custom li, .navbar-custom li a {
-    color: rgb(148, 75, 166);
+    color: #000;
 }
 
-/* change the brand and text color */
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
-    color: #fff;
+img {
+    max-width:100%;
 }
-
-/* change the link color */
-.navbar-custom .navbar-nav .nav-link {
-    color: rgb(148, 75, 166);
-}
-
-/* change the color of active or hovered links */
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:focus .nav-link,
-.navbar-custom .nav-item:hover .nav-link {
-    color: #fff;
-}
-
-
-
 img.logo {
     max-width: 100%;
 }
@@ -58,19 +40,6 @@ img.small-logo {
     font-size: 55px;
     line-height:130%;
     font-family: Afacad;
-}
-
-
-.nav-bar {
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-}
-
-.nav {
-    padding: 15px;
-    text-align:center;
 }
 
 .centered {
@@ -88,26 +57,7 @@ img.small-logo {
 
 .footer {
 
-    text-align:center;
     width:100%;
-}
-
-.social-media {
-    padding-bottom:15px;
-    margin-top:50px;
-}
-
-.footer a {
-    margin-left:50px;
-}
-
-.footer a:first-child {
-    margin-right: 0;
-}
-
-.home .date {
-    text-align:right;
-    color:#fff;
 }
 
 .image-wrapper {
@@ -133,13 +83,12 @@ img.small-logo {
 
 }
 
-.footer-nav {
-    padding:40px 0 20px 0;
-    background-color: rgb(255, 255, 255, 0.1);
-}
-
 .content {
     color:#fff;
+}
+
+p.content  {
+    font-size: 1.2rem;
 }
 
 .content h3 {
@@ -150,9 +99,8 @@ img.small-logo {
     text-align:center
 }
 
-.footer-nav ul {
-    list-style:none;
-    line-height:200%;
+.content img {
+  background-color: #a24695;
 }
 
 .footer-nav ul li a {
@@ -161,20 +109,5 @@ img.small-logo {
     font-family: "Jomolhari";
 }
 
-.footer ul li.active a {
-    color: #000;
-}
 
-@media screen and (max-width: 990px) 
-{
-  .nav-link {
-    margin-left: 20px;
-    font-size:5vw;
-  }
-  img.small-logo {
-    max-width: 100%;
-  }
-  .leading-heading {
-    font-size: 27px;
-  }
-}
+
