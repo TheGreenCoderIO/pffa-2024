@@ -24,6 +24,11 @@ body {
     color: #000;
 }
 
+.sponsors {
+  color: #34422f;
+  background-color: #fff;
+}
+
 img {
     max-width:100%;
 }
