@@ -12,6 +12,19 @@ body {
     font-family: "Jomolhari";
 }
 
+.dropdown {
+   list-style: none;
+   display: inline-block;
+ }
+ 
+ 
+ .dropdown-menu {
+   margin: 0;
+   list-style: none;
+   border: none;
+   background-color: #a24695;
+ }
+
 .nav-item {
   font-size: 1rem;
 }

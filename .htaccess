@@ -1,0 +1,28 @@
+RewriteEngine On
+
+# Redirect /program.html naar /program
+RewriteCond %{THE_REQUEST} \s/program\.html [NC]
+RewriteRule ^ /program [R=301,L]
+
+# Redirect /venues.html naar /venues
+RewriteCond %{THE_REQUEST} \s/venues\.html [NC]
+RewriteRule ^ /venues [R=301,L]
+
+# Redirect /index.html naar de hoofdpagina /
+RewriteCond %{THE_REQUEST} \s/index\.html [NC]
+RewriteRule ^ / [R=301,L]
+
+# Intern doorverwijzen van /program naar /program.html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^program/?$ /program.html [L]
+
+# Intern doorverwijzen van /venues naar /venues.html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^venues/?$ /venues.html [L]
+
+# Intern doorverwijzen van / naar /index.html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^$ /index.html [L]
