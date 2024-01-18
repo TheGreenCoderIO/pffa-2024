@@ -16,11 +16,18 @@
     <nav class="navbar navbar-custom navbar-expand-lg navbar-static-top">
       <div class="container-fluid ">
         <div class="col-sm-8 col-8 col-md-8 ms-0 ms-lg-5">
-        <a class="navbar-brand " href="index.html">
+        <a class="navbar-brand " href="#">
           <img src="./images/logo_nav.png" class="img-fluid"/>
         </a>
         </div>
-		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
 		      <span class="navbar-toggler-icon"></span>
 		    </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -28,11 +35,25 @@
             <li class="nav-item me-5">
               <a class="nav-link" href="about.html">About Us</a>
             </li>
-            <li class="nav-item me-5">
-              <a class="nav-link" href="program.html">Program</a>
+            <li class="nav-item me-5 dropdown">
+              <a 
+                class="nav-link dropdown-toggle" 
+                href="#" 
+                id="navbarDropdown" 
+                data-bs-toggle="dropdown"
+                type="button"
+                aria-expanded="false">
+              Program
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="nav-item dropdown-item" href="dayone.html">Thur, 8 Feb</a></li>
+                <li><a class="nav-item dropdown-item" href="daytwo.html">Fri, 9 Feb</a></li>
+                <li><a class="nav-item dropdown-item" href="daythree.html">Sat, 10 Feb</a></li>
+                <li><a class="nav-item dropdown-item" href="dayfour.html">Sun, 11 Feb</a></li>
+              </ul>
             </li>
             <li class="nav-item me-5">
-              <a class="nav-link active" href="venues.html">Venues</a>
+              <a class="nav-link" href="venues.html">Venues</a>
             </li>
           </ul>
         </div>
